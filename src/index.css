@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --primary-dark-color: #1c2024;
+  --primary-gray-color: #60646c;
+  --primary-light-gray-color: #7E808A;
+  --primary-light-color: #f9f9fb;
+  --primary-link-color: #3a5ccc;
+}
 
 * {
   margin: 0;
@@ -7,38 +18,10 @@
   box-sizing: border-box;
 }
 
-:root {
-  --black-color: #000000;
-  --white-color: #ffffff;
-  --primary-dark-color: #1c2024;
-  --primary-gray-color: #60646c;
-  --primary-light-gray-color: #7e808a;
-  --primary-light-color: #f9f9fb;
-  --primary-link-color: #3a5ccc;
-}
-
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 50px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #dee1e5; 
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #bbb; 
-}
-
-body {
+body{
   font-family: open sans;
 }
+
 
 .parent-container {
   width: 100%;
@@ -52,7 +35,7 @@ body {
 .flex-column {
   flex-direction: column;
 }
-.justify-start {
+.justify-start{
   justify-content: flex-start;
 }
 
@@ -68,14 +51,17 @@ body {
 .align {
   align-items: center;
 }
+.w-full{
+  width: 100%;
+}
 
-.gap-half {
+.gap-half{
   gap: 2px;
 }
 .gap-1 {
   gap: 4px;
 }
-.gap-6px {
+.gap-6px{
   gap: 6px;
 }
 .gap-2 {
@@ -102,7 +88,7 @@ body {
 .gap-8 {
   gap: 32px;
 }
-.gap-16 {
+.gap-16{
   gap: 64px;
 }
 .gap-15px{

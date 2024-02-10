@@ -1,5 +1,4 @@
 import "../../styles/Checkout.css";
-import React, { useState } from "react";
 import Header from "../../components/header";
 import InfoIcon from "../../icons/InfoIcon";
 import EnterDetails from "./EnterDetails";
@@ -7,17 +6,16 @@ import TotalPayable from "./TotalPayable";
 import SelectPaymentMode from "./SelectPaymentMode";
 import AdditionalInfo from "./AdditionalInfo";
 import FAQSection from "./FAQSection";
-import Carousel from "../../components/carousel/Carousel";
 import Footer from "../../components/footer";
+import BookingSummary from "./BookingSummary";
 
 const CheckoutPage = () => {
-
-
   return (
     <>
       <div className="main-container">
         <Header />
-        <div className="checkout-sub-container ">
+        <div className="inner-container">
+        <div className="checkout-sub-container">
           <div className="checkout-sub-container-left-section">
             <div className="confirm-pay-container">
               <div className="flex flex-column gap-8">
@@ -42,7 +40,7 @@ const CheckoutPage = () => {
                       <InfoIcon />
                     </div>
                   </div>
-                  <dic className="gray-line"></dic>
+                  <div className="gray-line"></div>
                 </div>
               </div>
             </div>
@@ -52,15 +50,18 @@ const CheckoutPage = () => {
             <TotalPayable />
           </div>
           <div className="checkout-sub-container-right-section">
-            <div>
-              <div className="flex gap-1 confirm-sub-heading-div">
-                <p className="confirm-sub-heading">Confirm & pay</p>
-              </div>
-              <Carousel />
-            </div>
+           <BookingSummary/>
           </div>
+
         </div>
+        <div className="gray-line"></div>
+
+        </div>
+        <div className="faq-section">
         <FAQSection />
+        <div className="gray-line"></div>
+
+        </div>
 
         <Footer />
       </div>

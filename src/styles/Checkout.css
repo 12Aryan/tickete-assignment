@@ -4,24 +4,31 @@
   gap: 80px;
 }
 
+.inner-container , .faq-section{
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px 0 120px;
+  gap: 32px;
+}
+
 .checkout-sub-container {
   display: flex;
   /* max-width: 1200px; */
   flex-direction: row;
   gap: 32px;
-  padding: 0 120px 0 120px;
 }
 
 .checkout-sub-container-left-section {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width:100%;
   gap: 64px;
 }
 .checkout-sub-container-right-section {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  max-width: 365px;
+  /* min-width: 300px; */
 
   height: max-content;
 }
@@ -47,7 +54,8 @@
   display: flex;
   gap: 12px;
   justify-content: space-between;
-  padding: 12px;
+  padding: 16px 16px 16px 20px;
+  background-color: #FCFCFD;
 }
 
 .free-cancelation-text {
@@ -108,6 +116,7 @@ select {
   width: 100%;
   outline: none;
   color: var(--primary-light-gray-color);
+  background-color: white;
 }
 
 select option {
@@ -209,6 +218,7 @@ input::placeholder {
   justify-content: space-between;
 }
 .save-price-btn {
+  width: max-content;
   padding: 4px 8px;
   gap: 4px;
   background-color: #299764;
@@ -252,6 +262,7 @@ input::placeholder {
   text-align: left;
 }
 .confirm-pay-btn {
+  cursor: pointer;
   background-color: var(--black-color);
   border-radius: 16px;
   padding: 16px 20px;
@@ -339,16 +350,7 @@ input::placeholder {
   background-color: #fcfcfd;
 }
 
-.left-icon-div {
-  left: 20px;
-  position: absolute;
-  top: 35%;
-}
-.right-icon-div {
-  right: 20px;
-  position: absolute;
-  top: 35%;
-}
+
 .need-help-text {
   font-family: Open Sans;
   font-size: 18px;
@@ -359,6 +361,7 @@ input::placeholder {
   color: var(--primary-dark-color);
 }
 .chat-with-us-btn {
+  cursor: pointer;
   background-color: var(--black-color);
   border-radius: 12px;
   padding: 14px 16px;
@@ -372,12 +375,12 @@ input::placeholder {
   letter-spacing: 0em;
   text-align: left;
   color: #edeef0;
+  width: max-content;
 }
 
 .faq-parent {
   display: flex;
   gap: 32px;
-  padding: 0 120px;
 }
 
 .confirm-sub-heading {
@@ -426,24 +429,74 @@ letter-spacing: 0em;
 text-align: left;
 
 }
+.faq-inner-text{
+  display: flex;
+    flex-direction: column;
+}
+.radio{
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  border: 1px solid #D3D4DB;
+  background-color: #E4E4E9;
+}
+.enter-details-text-section{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 881px) {
+  .faq-heading-text{
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 881px) {
+  .faq-parent{
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .faq-inner-text{
+    display: none;
+  }
+  .inner-container, .faq-section{
+    padding: 0 70px;
+  }
+}
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
+  .radio{
+    height: 20px;
+    width: 20px;
+  }
   .confirm-sub-heading-div {
     display: none;
   }
   .total-payable-btn-div{
     display: none;
   }
+  .faq-heading-text{
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
   .main-container {
     gap: 48px;
   }
+  .inner-container, .faq-section{
+    gap: 24px;
+    padding: 0 16px;
+  }
   .checkout-sub-container {
     flex-direction: column-reverse;
-    padding: 0 16px;
     gap: 24px;
   }
   .checkout-sub-container-left-section{
@@ -455,6 +508,7 @@ text-align: left;
   .checkout-sub-container-left-section,
   .checkout-sub-container-right-section {
     width: 100%;
+    max-width: 100%;
   }
   .confirm-heading-div {
     display: none;
@@ -484,6 +538,7 @@ text-align: left;
     font-size: 14px;
     line-height: 20px;
   }
+
   .select-payment-text-below,
   .enter-details-text-below,.faq-below-text {
     font-size: 14px;
@@ -515,10 +570,14 @@ text-align: left;
     border-radius: 12px;
   }
   .faq-parent{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 28px;
   }
-  .illustraion-container{
+  .faq-inner-text{
     display: none;
+  }
+  .enter-details-form {
+    gap: 20px;
   }
 }
 
