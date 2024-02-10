@@ -1,0 +1,532 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.checkout-sub-container {
+  display: flex;
+  /* max-width: 1200px; */
+  flex-direction: row;
+  gap: 32px;
+  padding: 0 120px 0 120px;
+}
+
+.checkout-sub-container-left-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 64px;
+}
+.checkout-sub-container-right-section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  height: max-content;
+}
+
+.confirm-pay-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.confirm-heading {
+  font-family: Roboto Serif;
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0.006em;
+  text-align: left;
+}
+
+.free-cancelation {
+  border: 1px solid #d3d4db;
+  border-radius: 16px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.free-cancelation-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+
+.free-cancelation-text-below {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-gray-color);
+}
+
+.enter-details-text {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.006em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+.enter-details-text-below-div{
+  padding: 0 0 16px 0;
+}
+
+.enter-details-text-below {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-gray-color);
+}
+
+.input-div {
+  border: 1px solid #b9bbc6;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.input-div input,
+select {
+  font-family: open sans;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 18px 10px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: var(--primary-light-gray-color);
+}
+
+select option {
+  color: var(--primary-light-gray-color);
+  font-family: open sans;
+  font-size: 16px;
+}
+
+input::placeholder {
+  font-family: open sans;
+  font-size: 16px;
+}
+
+.enter-details-form {
+  border-bottom: 1px solid #dddde3;
+  padding-bottom: 30px;
+}
+.select-payment-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-bottom: 1px solid #dddde3;
+}
+.select-payment-mode .sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+.select-payment-text {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.006em;
+  text-align: left;
+  color: var(--primary-dark-color);
+  padding: 0px 0px 16px 0px;
+}
+.select-payment-text-below {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-gray-color);
+  padding: 0px 0px 16px 0px;
+}
+.credit-card-details {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  padding: 28px 24px 0 24px;
+  border: 1px solid #1c2024;
+  border-radius: 16px;
+  background-color: var(--white-color);
+}
+.credit-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 7.5px;
+  border-radius: 3.75px;
+  border: 0.63px solid #dddde3;
+}
+.credit-heading {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+.credit-details-form {
+  border-top: 1px solid #dddde3;
+}
+.confirm-and-pay-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-top: 1px solid #dddde3;
+  padding: 16px 0 32px 0;
+}
+.total-payable-text {
+  padding: 0px 0px 8px 0px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+.total-payable-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.save-price-btn {
+  padding: 4px 8px;
+  gap: 4px;
+  background-color: #299764;
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #e9f9ee;
+}
+.AED-text {
+  color: var(--primary-gray-color);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.terms-condition-text {
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-gray-color);
+}
+.link-text {
+  color: #3a5ccc;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.confirm-pay-btn {
+  background-color: var(--black-color);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+  color: var(--white-color);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+.coming-soon-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #d3d4db;
+  padding: 24px;
+  background-color: #f9f9fb;
+}
+.coming-soon-text {
+  color: #8b8d98;
+  display: flex;
+  gap: 15px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.faq-text {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.006em;
+  text-align: left;
+  color: var(--primary-dark-color);
+  padding: 0 0 16px 0;
+}
+.faq-below-text {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-gray-color);
+  padding: 0 0 16px 0;
+}
+.illustraion-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9fb;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.best-seller-icon-div {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  left: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #f9f9fb8c;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fcfcfd;
+}
+
+.left-icon-div {
+  left: 20px;
+  position: absolute;
+  top: 35%;
+}
+.right-icon-div {
+  right: 20px;
+  position: absolute;
+  top: 35%;
+}
+.need-help-text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+.chat-with-us-btn {
+  background-color: var(--black-color);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 8px;
+  border: none;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #edeef0;
+}
+
+.faq-parent {
+  display: flex;
+  gap: 32px;
+  padding: 0 120px;
+}
+
+.confirm-sub-heading {
+  font-family: Roboto Serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.006em;
+  text-align: left;
+  color: var(--primary-dark-color);
+}
+
+.confirm-sub-heading-div {
+  display: flex;
+  gap: 4px;
+  padding: 0 0 20px 0;
+}
+
+.free-cancelation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.gray-line {
+  border: 1px solid #dddde3;
+}
+.total-payable-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.total-payable-btn{
+  display: flex;
+  align-items: center;
+  border: 1px solid #B4DFC4;
+  border: 100px;
+  background-color: #F2FCF5;
+  color: #299764;
+  padding: 2px 6px;
+  gap: 4px;
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .confirm-sub-heading-div {
+    display: none;
+  }
+  .total-payable-btn-div{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    gap: 48px;
+  }
+  .checkout-sub-container {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 24px;
+  }
+  .checkout-sub-container-left-section{
+    gap: 48px;
+  }
+  .total-payable-container{
+    gap:12px;
+  }
+  .checkout-sub-container-left-section,
+  .checkout-sub-container-right-section {
+    width: 100%;
+  }
+  .confirm-heading-div {
+    display: none;
+  }
+  .enter-details-text-section {
+    gap: 16px;
+  }
+  .faq-parent {
+    padding: 0 16px;
+    gap: 28px;
+  }
+  .enter-details-text,
+  .select-payment-text,.faq-text {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .total-payable-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .total-payable-btn-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .input-div input, .credit-heading,.coming-soon-text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .select-payment-text-below,
+  .enter-details-text-below,.faq-below-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 0 12px 0;
+  }
+
+  .select-payment-mode {
+    gap: 16px;
+  }
+  .confirm-and-pay-container{
+    border: none;
+    padding-top: 0;
+  }
+  .flex .gap-7{
+    gap: 20px;
+  }
+  .credit-card-details, .confirm-and-pay-container{
+    gap: 24px;
+  }
+  .confirm-and-pay-container{
+    padding-bottom: 28px;
+  }.confirm-pay-btn {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  }.coming-soon-div{
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+  .faq-parent{
+    flex-direction: column;
+  }
+  .illustraion-container{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .enter-details-form {
+    flex-direction: column !important ;
+  }
+  .flex .gap-7 {
+    flex-direction: column !important ;
+  }
+}
